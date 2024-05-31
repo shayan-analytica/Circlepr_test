@@ -1,6 +1,6 @@
 import React from "react";
 import "./Section.css";
-import './Responsive_section1.css'
+import "./Responsive_section1.css";
 
 function Section1() {
   return (
@@ -18,7 +18,7 @@ function Section1() {
             </div>
             <div className="img-container">
               <img
-                src="src/assets/images/section-1-image.png"
+                src="/assets/images/section-1-image.png"
                 alt=""
                 className="w-100 h-100"
                 data-aos="zoom-in"

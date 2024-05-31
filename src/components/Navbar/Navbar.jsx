@@ -11,10 +11,29 @@ function Navbar() {
   const logoContainer2 = useRef(null);
 
   const rotate = () => {
-    btn.current.classList.toggle("rotate");
+    btn.current.classList.toggle("rotate1");
     logo.current.classList.toggle("logo-hide");
-    logoContainer2.current.removeAttribute("id");
+    logoContainer2.current.removeAttribute("id");  
   };
+
+  const closeNavbar = (sectionId) => {
+    const navbarToggler = document.getElementById("navbarNav");
+    navbarToggler.classList.remove("show");
+    btn.current.classList.toggle("rotate2");
+    logo.current.classList.toggle("logo-hide");
+    if (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        window.scrollTo({ top: section.offsetTop, behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
+
+  
+
 
   useEffect(() => {
     const navbar = document.getElementById("nav");
@@ -57,7 +76,7 @@ function Navbar() {
           >
             <Link className="navbar-brand" to="/">
               <img
-                src="src\assets\logos\CirclePR v5 white .png"
+                src="/assets/logos/CirclePR v5 white .png"
                 alt=""
                 style={{ objectFit: "contain" }}
                 className="h-100 w-100"
@@ -81,32 +100,32 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav w-100">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link active" aria-current="page" to="/"  onClick={()=>closeNavbar()}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/aboutus">
+                <Link className="nav-link" aria-current="page" to="/aboutus" onClick={() => closeNavbar("aboutus-section")}>
                   AboutUs
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/#working">
+                <Link className="nav-link" aria-current="page" to="/#working" onClick={() => closeNavbar("working-section")}>
                   How It Works
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/#giftingslider">
+                <Link className="nav-link" to="/#giftingslider" onClick={() => closeNavbar("giftingslider-section")}>
                   Features
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/#blogs">
+                <Link className="nav-link" to="/#blogs" onClick={() => closeNavbar("blogs-section")}>
                   Blog
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/#contact">
+                <Link className="nav-link" to="/#contact" onClick={() => closeNavbar("contact-section")}>
                   Contact
                 </Link>
               </li>
@@ -117,7 +136,7 @@ function Navbar() {
                 className="playstore-btn d-flex align-items-center justify-content-center"
                 style={{ gap: "5px" }}
               >
-                <img src="src/assets/logos/playstore.png" alt="" />
+                <img src="/assets/logos/playstore.png" alt="" />
                 <span className="d-flex flex-column align-items-start">
                   Get it on
                   <span style={{ fontSize: "14px", fontWeight: "600" }}>
@@ -130,7 +149,7 @@ function Navbar() {
                 style={{ gap: "5px" }}
               >
                 <img
-                  src="src/assets/logos/appstore.png"
+                  src="/assets/logos/appstore.png"
                   alt=""
                   style={{ width: "36px", height: "38px" }}
                 />
@@ -150,7 +169,7 @@ function Navbar() {
               >
                 <Link className="navbar-brand" to="/">
                   <img
-                    src="src\assets\logos\CirclePR v5 white .png"
+                    src="/assets/logos/CirclePR v5 white .png"
                     alt=""
                     style={{ objectFit: "contain" }}
                     className="h-100 w-100"

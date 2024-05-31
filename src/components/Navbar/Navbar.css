@@ -25,7 +25,7 @@ nav .nav-container {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url(src/assets/icons/toggle-icon.svg) !important;
+    background-image: url(/assets/icons/toggle-icon.svg) !important;
 }
 
 .navbar-light .navbar-toggler {
@@ -58,11 +58,13 @@ nav .nav-container {
     box-shadow: none !important;
 }
 
-.rotate {
+.rotate1 {
     transform: rotate(90deg) !important;
     /* transition:  transform 1s ease; */
 }
-
+.rotate2{
+    transform: rotate(0) !important;
+}
 .navbar-toggler:hover {
     transition: transform 0.3s linear;
 

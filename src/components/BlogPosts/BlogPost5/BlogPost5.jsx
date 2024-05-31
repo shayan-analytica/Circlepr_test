@@ -64,7 +64,7 @@ function BlogPost5() {
               data-aos-once="true"
             >
               <img
-                src="src/assets/images/blogs/blog8.jpg"
+                src="/assets/images/blogs/blog8.jpg"
                 class="h-100 w-100"
                 style={{ objectFit: "cover" }}
                 alt=""
@@ -175,7 +175,7 @@ function BlogPost5() {
           <div class="col-md-12 my-4 d-flex align-items-center justify-content-center">
             <div class="blog-img" data-aos="fade-up" data-aos-once="true">
               <img
-                src="src/assets/images/blogs/blog7.jpg"
+                src="/assets/images/blogs/blog7.jpg"
                 class="h-100 w-100"
                 style={{ objectFit: "cover" }}
                 alt=""
@@ -224,7 +224,7 @@ function BlogPost5() {
             <div class="card author-profile">
               <div class="author-picture">
                 <img
-                  src="src/assets/images/blogs/auth-img.jpg"
+                  src="/assets/images/blogs/auth-img.jpg"
                   class="h-100 w-100"
                   style={{ objectFit: "cover" }}
                   loading="lazy"

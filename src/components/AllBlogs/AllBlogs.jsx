@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./AllBlogs.css";
-import "./Responsive_Allblogs.css"
+import "./Responsive_Allblogs.css";
 
 import Loader from "../Loader/Loader";
 import Navbar from "../Navbar/Navbar";
@@ -28,7 +28,7 @@ function AllBlogs() {
             <div className="card" data-aos="fade-up" data-aos-duration="500">
               <div className="card-header">
                 <img
-                  src="src/assets/images/blogs/blog1.jpg"
+                  src="/assets/images/blogs/blog1.jpg"
                   alt=""
                   className="h-100 w-100"
                 />
@@ -49,7 +49,7 @@ function AllBlogs() {
             <div className="card" data-aos="fade-up" data-aos-duration="1000">
               <div className="card-header">
                 <img
-                  src="src/assets/images/blogs/blog2.jpg"
+                  src="/assets/images/blogs/blog2.jpg"
                   alt=""
                   className="h-100 w-100"
                 />
@@ -72,7 +72,7 @@ function AllBlogs() {
             <div className="card" data-aos="fade-up" data-aos-duration="2000">
               <div className="card-header">
                 <img
-                  src="src/assets/images/blogs/blog9.jpg"
+                  src="/assets/images/blogs/blog9.jpg"
                   alt=""
                   className="h-100 w-100"
                 />
@@ -95,7 +95,7 @@ function AllBlogs() {
             <div className="card" data-aos="fade-up" data-aos-duration="3000">
               <div className="card-header">
                 <img
-                  src="src/assets/images/blogs/blog8.jpg"
+                  src="/assets/images/blogs/blog8.jpg"
                   alt=""
                   className="h-100 w-100"
                 />
@@ -116,7 +116,7 @@ function AllBlogs() {
             <div className="card" data-aos="fade-up" data-aos-duration="500">
               <div className="card-header">
                 <img
-                  src="src/assets/images/blogs/blog7.jpg"
+                  src="/assets/images/blogs/blog7.jpg"
                   alt=""
                   className="h-100 w-100"
                 />

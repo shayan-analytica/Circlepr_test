@@ -1,6 +1,6 @@
 .blogs-detail-section1 .blog-section1 {
   background: linear-gradient(0deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 75%) 100%),
-    url("src/assets/images/blogs/blog1.jpg"), lightgray 50%;
+    url("/assets/images/blogs/blog1.jpg"), lightgray 50%;
 }
 .blogs-detail-section1 .blog-section1 .content h3 {
   color: var(--Neutrals-50, #fafbfa);

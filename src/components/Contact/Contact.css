@@ -1,0 +1,121 @@
+.contact {
+    background: var(--Primary-100, #EAF0EE);
+    padding: var(--padding-lg);
+    overflow: hidden;
+}
+
+.contact h3 {
+    color: var(--Neutrals-900, #131614);
+    /* H2/SemiBold */
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+    text-align: center;
+}
+
+.contact p {
+    color: var(--Neutrals-700, #5F6D66);
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: -0.32px;
+}
+
+.contact label {
+    color: var(--Neutrals-800, #39423D);
+    font-family: var(--font-quicksand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+}
+
+.contact input,
+.contact textarea {
+    display: flex;
+    height: 40px;
+    padding: 4px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Neutrals-200, #E7EAE8);
+    background: var(--Shades-White, #FFF);
+    color: #9DAAA3;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #9DAAA3;
+}
+
+.contact button {
+    font-family: inherit;
+    font-size: 14px;
+    background: var(--primary-green);
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    padding: 10px 20px;
+    float: right;
+    margin-top: 15px;
+    font-family: var(--font-quicksand);
+    gap: 2px;
+}
+
+
+.contact button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.contact button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.contact button:hover span {
+    transform: translateX(5em);
+}
+
+.contact button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}

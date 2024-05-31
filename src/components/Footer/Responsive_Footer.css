@@ -1,0 +1,34 @@
+@media(max-width:1024px) {
+    footer {
+        padding: var(--padding-md) !important;
+    }
+
+}
+
+@media(max-width:992px) {
+}
+
+@media(max-width:713px) {
+    footer .footer-links {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin-bottom: 30px;
+        width: 100% !important;
+    }
+
+    footer .footer-social {
+        justify-content: center;
+        width: 100% !important;
+    }
+
+    footer .row:first-child {
+        justify-content: center;
+    }
+}
+
+@media(max-width:430px) {
+    footer {
+        padding: var(--padding-sm) !important;
+    }
+}

@@ -1,0 +1,32 @@
+@media(max-width:1024px) {
+    .navbar {
+        padding: var(--padding-md) !important;
+        text-align: center;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar .btn-container {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:992px) {
+    .navbar-light .navbar-nav {
+        gap: 10px;
+    }
+
+    .navbar .btn-container {
+        display: none !important;
+    }
+
+    .navbar .footer-social {
+        display: flex !important;
+    }
+}
+
+@media(max-width:430px) {
+    .navbar {
+        padding: var(--padding-sm) !important;
+    }
+}

@@ -1,0 +1,115 @@
+.page-title {
+    padding: var(--padding-lg);
+margin-top: 5rem;
+}
+
+.page-title h1 {
+    color: var(--Primary-800, #2B3A35);
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 60px */
+    letter-spacing: -1.6px;
+}
+
+.page-title h2 {
+    color: var(--Neutrals-800, #39423D);
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 27px */
+}
+
+.all-blogs {
+    padding: 30px var(--padding-lg) !important;
+    overflow-y: hidden;
+}
+
+.all-blogs .card {
+    width: 100%;
+    height: 480px;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.all-blogs .card .card-header {
+    min-height: 194px;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    background: var(--Neutrals-100, #F0F2F1);
+    padding: 0;
+    overflow: hidden;
+}
+
+.all-blogs .card .card-header img {
+    object-fit: cover;
+}
+
+.all-blogs .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.all-blogs .card .card-title {
+    color: var(--Neutrals-800, #39423D);
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 27px */
+}
+
+.all-blogs .card .card-description {
+    color: var(--Neutrals-700, #5F6D66);
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    height: 100%;
+    /* 24px */
+}
+
+.all-blogs .card .read-more-btn {
+    border-radius: 100px;
+    background: var(--Neutrals-900, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #131614);
+    display: flex;
+    width: 160px;
+    height: 40px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Neutrals-50, #FAFBFA);
+    font-family: var(--font-quicksand);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    transition: 0.2s;
+    /* 21px */
+    border: 1px solid #FAFBFA;
+    text-decoration: none;
+    position: absolute;
+    bottom: 60px;
+}
+
+.all-blogs .card .read-more-btn:hover {
+    background: #fff;
+    border: #000;
+    color: #000;
+    border: 1px solid #000;
+    transition: 0.3s;
+}

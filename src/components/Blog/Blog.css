@@ -1,0 +1,207 @@
+.blog-section {
+    background-color: #fff;
+    padding: var(--padding-lg);
+    position: relative;
+}
+
+.blog-section .chev-container {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 910%;
+    position: absolute;
+    z-index: 10;
+    width: 91%;
+    top: 50%;
+    transition: 0.5s ease-in-out;
+
+}
+
+.blog-section #blogSlider {
+    cursor: pointer;
+}
+
+.blog-section #blogSlider a {
+    height: auto;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.blog-section #blogSlider:hover~.chev-container #nextBtn,
+.blog-section #blogSlider:hover~.chev-container #prevBtn {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.blog-section .chev-container #prevBtn,
+.blog-section .chev-container #nextBtn {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+
+.blog-section .chev-container:hover #nextBtn,
+.blog-section .chev-container:hover #prevBtn {
+
+    opacity: 1;
+}
+
+.blog-section .chev-container #nextBtn:hover,
+.blog-section .chev-container #prevBtn:hover {
+    background-color: rgba(0, 0, 0, .3);
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+
+
+
+.blog-section .card {
+    width: 512px;
+    height: 478px;
+    background-color: none;
+    border: none;
+    transition: transform 0.3s linear;
+    transform: scale(1);
+}
+
+
+.blog-section .card:hover .card-header img {
+    transform: scale(1.02);
+    transition: transform 0.3s linear, filter 0.3s linear;
+    filter: brightness(0.7);
+}
+
+.blog-section .card .card-header img {
+    transition: transform 0.3s linear, filter 0.3s linear;
+    /* Added transition property here */
+}
+
+.blog-section .card .card-header {
+    height: 346px;
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.blog-section .card .card-body h1 {
+    color: var(--neutrals-900, #131614);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.48px;
+}
+
+.blog-section .card .card-body p {
+    color: var(--neutrals-600, #87978E);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.blog-section .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 50%;
+}
+
+
+.blog-section .blog-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 32px;
+    align-items: center;
+    justify-content: start;
+    cursor: pointer;
+    scrollbar-width: none;
+    /* Firefox */
+
+}
+
+.blog-section .blog-row::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent !important;
+}
+
+.blog-section .blog-row::-webkit-scrollbar-track {
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent !important;
+}
+
+.blog-section .row:first-child h2 {
+    color: var(--Neutrals-900, #131614);
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+}
+
+.blog-section .row:first-child p {
+    color: var(--Neutrals-700, #5F6D66);
+    font-family: var(--font-quicksand);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 36px */
+    letter-spacing: -0.48px;
+}
+
+.blog-section .row:first-child a {
+    text-decoration: none;
+    border-radius: 100px;
+    background: var(--Neutrals-900, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #131614);
+    display: flex;
+    width: 200px;
+    min-width: 130px;
+    height: 56px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Neutrals-50, #FAFBFA);
+    font-family: var(--font-quicksand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    transition: 0.4s linear all;
+}
+
+
+
+.blog-section .row:first-child a:hover {
+    background: #fff;
+    border: 1px solid var(--primary-black);
+    color: var(--primary-black);
+    transition: 0.4s linear all;
+}

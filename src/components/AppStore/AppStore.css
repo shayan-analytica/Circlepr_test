@@ -1,0 +1,35 @@
+.app-store-banner {
+    /* background-attachment: url('/assets/images/app-section-banner.png'); */
+    background: url('src/assets/images/app-section-banner.png');
+    height: 520px;
+    overflow-y: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.app-store-banner h3 {
+    color: var(--Neutrals-50, #FAFBFA);
+    font-family: var(--font-quicksand);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 60px */
+    letter-spacing: -1.6px;
+    text-align: center;
+}
+
+.app-store-banner p {
+    width: 70%;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    /* 27px */
+}

@@ -1,0 +1,18 @@
+:root {
+  /* variables for colors and font family */
+  --font-quicksand: "quicksand";
+  --font-noto: "Noto Serif";
+  --primary-green: #2B3A35;
+  --primary-black: #131614;
+  --padding-lg: 65px;
+  /* 1024px */
+  --padding-md: 20px 40px;
+  --padding-sm: 12px;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden !important;
+  margin: 0;
+}

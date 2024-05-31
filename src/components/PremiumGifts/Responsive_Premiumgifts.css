@@ -1,0 +1,45 @@
+@media(max-width:1024px) {
+    .premium-gifts {
+        padding: var(--padding-md) !important;
+    }
+}
+
+@media(max-width:992px) {
+    .premium-gifts .cards-row:hover .chev-container2 {
+        display: none !important;
+    }
+}
+
+@media(max-width:768px) {
+    .premium-gifts .small-card h4 {
+        font-size: 22px;
+    }
+
+}
+
+@media(max-width:425px) {
+    .premium-gifts .big-card,
+    .premium-gifts .small-card {
+        min-width: 296px;
+        height: 450px;
+    }
+
+
+    .premium-gifts .small-card .card-header {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:430px) {
+    .premium-gifts {
+        padding: var(--padding-sm) !important;
+    }
+
+    .premium-gifts .row:first-child .pg,
+    .premium-gifts .row:first-child span {
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,91 @@
+.section-2 {
+    background-color: #FAFBFA;
+    padding: var(--padding-lg) !important;
+}
+
+.section-2 .carousel-item .image-container {
+    width: 377px;
+    height: 531px;
+}
+
+.section-2 .carousel-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFBFA;
+}
+
+.section-2 .carousel-inner {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.section-2 .carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 .carousel-indicators [data-bs-target] {
+
+    width: 8px;
+    height: 8px;
+    background-color: #C4CCC8;
+    border-radius: 30px !important;
+    opacity: 1;
+    border: 1px;
+}
+
+.section-2 .carousel-indicators .active {
+    width: 24px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--Primary-500, #75988D);
+}
+
+
+.section-2 .carousel-indicators {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-2 h4 {
+    color: #000;
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+
+}
+
+.section-2 p {
+    color: var(--Neutrals-900, #131614);
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    /* 32.4px */
+}
+
+.section-2 .playstore-btn {
+    border-radius: 40px;
+    background: linear-gradient(94deg, #4B4B4B -1.7%, #000 81.41%);
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15) inset, -4px -4px 12px 0px rgba(0, 0, 0, 0.15) inset;
+    color: #fff;
+    transition: 0.3s linear all;
+}
+
+.section-2 .playstore-btn:hover {
+    background: #fff;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15) inset, -4px -4px 12px 0px rgba(0, 0, 0, 0.15) inset;
+    color: #000000;
+    transition: 0.3s linear all;
+}
+.section-2 .right-col .btn-container{
+    position: absolute;
+    bottom: 40px;
+}

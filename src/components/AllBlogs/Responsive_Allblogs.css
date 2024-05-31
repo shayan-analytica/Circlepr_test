@@ -1,0 +1,25 @@
+@media(max-width:1397px) {
+    .all-blogs .card .read-more-btn {
+        position: unset;
+    }
+}
+
+
+@media(max-width:1024px) {
+
+    .all-blogs {
+        padding: var(--padding-md) !important;
+    }
+}
+
+@media(max-width:768px) {
+    .all-blogs .card .read-more-btn {
+        position: absolute !important;
+    }
+}
+
+@media(max-width:430px) {
+    .all-blogs {
+        padding: var(--padding-sm) !important;
+    }
+}

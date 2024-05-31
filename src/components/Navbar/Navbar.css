@@ -1,0 +1,116 @@
+.navbar {
+    background-color: var(--primary-green);
+    height: fit-content;
+    padding: 0px 40px;
+    z-index: 1000;
+    width: 100%;
+}
+
+
+.nav-color {
+    background-color: #FAFBFA;
+}
+
+#logoContainer2 {
+    display: none;
+}
+
+.logo-hide {
+    visibility: hidden;
+    transition: 0.01s linear all;
+}
+
+nav .nav-container {
+    position: relative;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(src/assets/icons/toggle-icon.svg) !important;
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--Neutrals-50, #FAFBFA) !important;
+    /* P1/Medium */
+    font-family: var(--font-quicksand);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    transition: 0.2s linear all;
+    /* 21px */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    opacity: 0.7;
+    transition: 0.2s linear all;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.rotate {
+    transform: rotate(90deg) !important;
+    /* transition:  transform 1s ease; */
+}
+
+.navbar-toggler:hover {
+    transition: transform 0.3s linear;
+
+}
+
+.navbar .playstore-btn,
+.app-store-banner .playstore-btn,
+.section-2 .playstore-btn {
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background: linear-gradient(94deg, #FAFBFA -1.7%, #CDCDCD 81.41%);
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3) inset, -4px -4px 12px 0px rgba(255, 255, 255, 0.2) inset, 0px 0px 8px 3px rgb(115 148 138);
+    /* box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15) inset, -4px -4px 12px 0px rgba(0, 0, 0, 0.15) inset; */
+    width: 160px;
+    height: 56px;
+    flex-shrink: 0;
+    color: var(--Neutrals-800, #39423D);
+    font-family: var(--font-quicksand);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 12px */
+    letter-spacing: 0.2px;
+    transition: 0.3s linear all;
+
+}
+
+
+.app-store-banner .playstore-btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #ffffff42;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15) inset, -4px -4px 12px 0px rgba(0, 0, 0, 0.15) inset;
+    transition: 0.3s linear all;
+
+}
+
+.navbar .playstore-btn:hover {
+    color: #fff;
+    background: #131614;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3) inset, -4px -4px 12px 0px rgba(255, 255, 255, 0.2) inset, 0px 0px 8px 3px rgb(115 148 138);
+    /* box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.15) inset, -4px -4px 12px 0px rgba(0, 0, 0, 0.15) inset; */
+    transition: 0.3s linear all;
+
+}
+
+.navbar-light .navbar-nav {
+    justify-content: center;
+    gap: 40px;
+}

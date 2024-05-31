@@ -1,0 +1,13 @@
+@media(max-width:425px) {
+    .app-store-banner .btn-container {
+        flex-direction: column !important;
+    }
+
+    .app-store-banner {
+        height: 700px !important;
+    }
+
+    .app-store-banner p {
+        width: 100%;
+    }
+}

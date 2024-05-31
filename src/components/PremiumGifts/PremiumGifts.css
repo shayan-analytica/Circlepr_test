@@ -1,0 +1,188 @@
+.premium-gifts {
+    padding: var(--padding-lg) !important;
+}
+
+.premium-gifts .row:first-child span {
+    color: var(--Neutrals-700, #5F6D66);
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.64px;
+}
+
+.premium-gifts .row:first-child .pg {
+    color: #050605;
+}
+
+.premium-gifts .big-card {
+    min-width: 416px;
+    height: 580px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.10), -1px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.premium-gifts .card .card-header {
+    background-color: transparent;
+    border: none;
+    padding: 17px;
+}
+
+.premium-gifts .big-card h4 {
+    color: #000;
+    font-family: var(--font-quicksand);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+}
+
+.premium-gifts .big-card h5 {
+    color: var(--Neutrals-900, #131614);
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+.premium-gifts .small-card {
+    min-width: 376px;
+    height: 580px;
+    border-radius: 24px;
+    background: var(--Shades-White, #FFF);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.10), -1px -1px 12px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.premium-gifts .cards-container {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: pointer;
+    scrollbar-width: none;
+}
+
+.premium-gifts .cards-container::-webkit-scrollbar {
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent !important;
+}
+
+.premium-gifts .cards-container::-webkit-scrollbar-track {
+    width: 0px !important;
+    height: 0px !important;
+    background-color: transparent !important;
+}
+
+.premium-gifts .small-card .card-header {
+    border-radius: 16px;
+    /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 318px;
+    height: 318px;
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.premium-gifts .small-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 40px; */
+    padding-bottom: 0;
+}
+
+.premium-gifts .small-card h4 {
+    color: var(--Neutrals-800, #39423D);
+    font-family: var(--font-quicksand);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 48px */
+    letter-spacing: -0.64px;
+}
+
+
+.premium-gifts .small-card h5 {
+    color: var(--Neutrals-800, #39423D);
+    font-family: var(--font-quicksand);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: -0.32px;
+}
+
+.premium-gifts .card .new-tag {
+    color: var(--Primary-600, #65877C);
+    font-family: var(--font-quicksand);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 27px */
+}
+
+.premium-gifts .cards-row {
+    position: relative;
+}
+
+.premium-gifts .chev-container2 {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.premium-gifts .cards-row:hover .chev-container2 {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.premium-gifts .chev-container2 #prevBtn2,
+.premium-gifts .chev-container2 #nextBtn2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 1; */
+    /* background-color: #fff; */
+    /* color: #000000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.premium-gifts .chev-container2 #prevBtn2:hover,
+.premium-gifts .chev-container2 #nextBtn2:hover {
+    background-color: rgba(0, 0, 0, .3);
+    transform: scale(1.1);
+    transition: 0.5s;
+    font-weight: 500;
+}
